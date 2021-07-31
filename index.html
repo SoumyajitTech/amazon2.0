@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <title id="amazon_home">Amazon 2.0 | Home</title>
+    <link rel="icon" href="images/logo.png" type="image/icon type">
 </head>
 <body>
     <div class="width-full">
@@ -17,12 +18,12 @@
                 <img class="w-28 h-16 object-contain ml-10 mr-20 pt-3" src="images/logo-amazon-4096.png" alt="This is a logo">
                 </a>
             </div>
-            <input class="h-9 w-30 bg-gray-800 border border-grey-500 border-opacity-75 rounded-l-xl px-3 ml-6 focus:outline-none placeholder-white text-white" id="search" type="text" placeholder="Search...">
-            <select class="h-9 w-30 bg-gray-800 border border-grey-500 border-opacity-75 px-3 text-white focus:outline-none" name="catagory" id="catagory">
+            <input class="h-9 w-6/12 bg-gray-800 border border-grey-500 border-opacity-75 rounded-l-xl px-3 ml-6 focus:outline-none placeholder-white text-white" id="search" type="text" placeholder="Search...">
+            <select class="h-9 w-40 bg-gray-800 border border-grey-500 border-opacity-75 px-3 text-white focus:outline-none" name="catagory" id="catagory">
                 <option value="">Catagory</option>
-                <option value="">Mobile</option>
-                <option value="">Desktop</option>
-                <option value="">Accessory</option>
+                <option value="mobile">Mobile</option>
+                <option value="desktop">Desktop</option>
+                <option value="accessory">Accessory</option>
             </select>
             <div class="search h-9 w-30 bg-yellow-500 rounded-r-xl text-white px-2 flex justify-center items-center border border-grey-500 border-opacity-75">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -31,24 +32,24 @@
             </div>
             <div class="icons ml-auto flex items-center justify-center text-white cursor-pointer">
                 <div class="love-icon ml-6">
-                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                 </div>
                 <div class="cart-icon bg-yellow-500 p-1.5 ml-6 rounded-lg text-sm">
-                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
                 </div>
                 <div class="bell-icon mx-6">
-                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
                     </svg>
                 </div>
             </div>
         </div>
         <div class="main h-screen flex">
-            <div class="aside_catagory w-1/5 bg-gray-900 border-t-2 p-6 border-grey-700 focus:ring-2 border-opacity-75 items-center">                    
+            <div class="aside_catagory w-1/8 bg-gray-900 border-t-2 p-6 border-grey-700 focus:ring-2 border-opacity-75 items-center">                    
                 <div class="sidebar_catagory p-1.5 bg-gray-700 hover:bg-gray-700 rounded-xl">
                     <div class="main-catagory text-yellow-500 flex font-bold p-1 cursor-pointer">
                         <span>
@@ -75,7 +76,7 @@
                     <span>Home and Garden</span>
                 </div>
                 <div class="sidebar_subcatagory flex hover:bg-gray-700 rounded-xl text-white cursor-pointer ml-8 p-2">
-                    <span>Fashion</span>
+                    <span>Fasion</span>
                 </div>
                 <div class="sidebar_subcatagory flex hover:bg-gray-700 rounded-xl text-white cursor-pointer m-4 p-2 font-bold">
                     <span>
@@ -91,7 +92,7 @@
                 </div>
 
             </div>
-            <div class="main_section flex-1 p-6 bg-gray-100">                    
+            <div class="main_section flex-1 p-6 bg-gray-50">                    
                 <div class="banner width-full h-44 rounded-lg flex items-end">                       
                     <button class="button flex justify-center items-center bg-white w-36 h-10 rounded-xl ml-4 mb-4 cursor-pointer text-yellow-500">Browse Products</button>
                 </div>
@@ -102,7 +103,7 @@
                     </svg>
                 </h1>
                 <div class="catagory_icons flex mt-3">
-                    <div class="desktop_icon h-20 w-20 bg-white opacity-80 hover:opacity-100 rounded-xl p-3 flex justify-center items-center mr-6 cursor-pointer border border-gray-100 hover:border-gray-700">
+                    <div class="desktop_icon h-20 w-20 bg-white opacity-80 hover:opacity-100 rounded-xl p-3 flex justify-center items-center mr-6 cursor-pointer border border-gray-100 hover:border-gray-700" aria-label="Desktop">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                         </svg>
@@ -151,21 +152,107 @@
                         </svg>
                     </h1>
                     <div class="products flex mt-3">
-                        <div class="main_product cursor-pointer bg-white rounded-lg border border-gray-100 hover:border-gray-700">
-                            <div class="product-image h-52 w-48 p-3">
+                        <div class="main_product cursor-pointer border border-gray-100 hover:border-gray-700 rounded-xl mr-5">
+                            <div class="product-image h-52 w-48 p-4 mb-4 bg-white rounded-xl">
                                 <img class="w-full h-full object-contain" src="https://m.media-amazon.com/images/I/41V5KQ500IL._AC_UY218_.jpg" alt="This is an image">
+                                <br>
+                                <div class="product-name px-2 font-bold">
+                                   Nintendo Switch(2019) 
+                                </div>
+                                <div class="product-maker px-2 text-blue-600 font-bold">
+                                    Nintendo
+                                </div>
+                                <div class="product-rating px-2 text-yellow-400">
+                                    ⭐⭐⭐⭐⭐ 4.8
+                                </div>
+                                <div class="product-price px-2 font-bold">
+                                    <p>₹33,990</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main_product cursor-pointer bg-white rounded-lg border border-gray-100 hover:border-gray-700 mr-5">
+                            <div class="product-image h-52 w-48 p-3">
+                                <img class="w-full h-full object-contain" src="https://m.media-amazon.com/images/I/417PwBC+iEL.__AC_SY200_.jpg" alt="This is an image">
                             </div>
                             <div class="product-name px-2 font-bold">
-                               <h3>Nintendo Switch(2019)</h3> 
+                               <h3>Iphone 12</h3> 
                             </div>
                             <div class="product-maker px-2">
-                                <p class="text-blue-600 font-bold">Nintendo</p>
+                                <p class="text-blue-600 font-bold">Apple</p>
                             </div>
                             <div class="product-rating px-2 text-yellow-400">
-                                <p>⭐⭐⭐⭐⭐ 4.8</p>
+                                <p>⭐⭐⭐⭐⭐ 4.5</p>
                             </div>
                             <div class="product-price px-2 font-bold">
-                                <h4>₹33,990</h4>
+                                <h4>₹75,900</h4>
+                            </div>
+                        </div>
+                        <div class="main_product cursor-pointer bg-white rounded-lg border border-gray-100 hover:border-gray-700 mr-5">
+                            <div class="product-image h-52 w-48 p-3">
+                                <img class="w-full h-full object-contain" src="https://images-na.ssl-images-amazon.com/images/I/81SWIot1FTS._UX522_.jpg" alt="This is an image">
+                            </div>
+                            <div class="product-name px-2 font-bold">
+                               <p>Helix Smart 2.0 smartwatch <br> from Timex Group with Body</p> 
+                            </div>
+                            <div class="product-maker px-2">
+                                <p class="text-blue-600 font-bold">Helix</p>
+                            </div>
+                            <div class="product-rating px-2 text-yellow-400">
+                                <p>⭐⭐⭐⭐⭐ 4.5</p>
+                            </div>
+                            <div class="product-price px-2 font-bold">
+                                <h4>₹4,299</h4>
+                            </div>
+                        </div>
+                        <div class="main_product cursor-pointer bg-white rounded-lg border border-gray-100 hover:border-gray-700 mr-5">
+                            <div class="product-image h-52 w-48 p-3">
+                                <img class="w-full h-full object-contain" src="https://m.media-amazon.com/images/I/41f8eOJLsPL.__AC_SY200_.jpg" alt="This is an image">
+                            </div>
+                            <div class="product-name px-2 font-bold">
+                               <h3>Oppo F19 Pro</h3> 
+                            </div>
+                            <div class="product-maker px-2">
+                                <p class="text-blue-600 font-bold">Oppo</p>
+                            </div>
+                            <div class="product-rating px-2 text-yellow-400">
+                                <p>⭐⭐⭐⭐⭐ 4.4</p>
+                            </div>
+                            <div class="product-price px-2 font-bold">
+                                <h4>₹21,400</h4>
+                            </div>
+                        </div>
+                        <div class="main_product cursor-pointer bg-white rounded-lg border border-gray-100 hover:border-gray-700 mr-5">
+                            <div class="product-image h-52 w-48 p-3">
+                                <img class="w-full h-full object-contain" src="https://m.media-amazon.com/images/I/61tc1tT32PS._AC_UL320_.jpg" alt="This is an image">
+                            </div>
+                            <div class="product-name px-2 font-bold">
+                               <h3>MV7 with Manfrotto <br> PIXI stand</h3> 
+                            </div>
+                            <div class="product-maker px-2">
+                                <p class="text-blue-600 font-bold">Shure</p>
+                            </div>
+                            <div class="product-rating px-2 text-yellow-400">
+                                <p>⭐⭐⭐⭐⭐ 4.6</p>
+                            </div>
+                            <div class="product-price px-2 font-bold">
+                                <h4>₹21,999</h4>
+                            </div>
+                        </div>
+                        <div class="main_product cursor-pointer bg-white rounded-lg border border-gray-100 hover:border-gray-700 mr-5">
+                            <div class="product-image h-52 w-48 p-3">
+                                <img class="w-full h-full object-contain" src="https://m.media-amazon.com/images/I/71KKwP9fc3L._AC_UL320_.jpg" alt="This is an image">
+                            </div>
+                            <div class="product-name px-2 font-bold">
+                               <h3>W-101-BK-PK Acoustic <br> Guitar Kit with Stand (Black)</h3> 
+                            </div>
+                            <div class="product-maker px-2">
+                                <p class="text-blue-600 font-bold">Martin</p>
+                            </div>
+                            <div class="product-rating px-2 text-yellow-400">
+                                <p>⭐⭐⭐⭐⭐ 4.5</p>
+                            </div>
+                            <div class="product-price px-2 font-bold">
+                                <h4>₹4,299</h4>
                             </div>
                         </div>
                     </div>
