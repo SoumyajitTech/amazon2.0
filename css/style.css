@@ -1,5 +1,7 @@
 .banner{
+    /* background-image: url("https://i.ibb.co/JnmTD12/banner.jpg"); */
     background-image: url("https://i.ibb.co/JnmTD12/banner.jpg");
-    background-position: center;
+    /* background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/AmazonExports/Fuji/2021/June/Fuji_TallHero_Gamers_en_US_1x._CB667161802_.jpg"); */
+    background-position:top;
     background-size: cover;
 }
