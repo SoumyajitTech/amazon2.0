@@ -43,7 +43,7 @@ function generateItems(items){
         let doc = document.createElement("div");
         doc.classList.add("main_product", "cursor-pointer", "mr-5");
         doc.innerHTML = `
-            <div class="product-image h-52 w-48 p-4 mb-4 bg-white border border-gray-100 hover:border-gray-700 rounded-xl">
+            <div class="product-image h-52 w-48 p-4 mb-4 bg-white border border-gray-100 hover:border-gray-700 rounded-xl mt-3">
                 <img class="w-full h-full object-contain p-3" src="${item.image}" alt="This is an image">
             </div>
             <div class="product-name px-2 font-bold w-48">
